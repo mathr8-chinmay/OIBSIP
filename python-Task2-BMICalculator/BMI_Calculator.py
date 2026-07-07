@@ -2,33 +2,36 @@ print("\n\t==========BMI calculator==========\n")
 print("\nTO calculate BMI(Body Mass Index) please give these details: \n \n")
 
 a = int(input("Enter Age : "))
-
-try:
-    h =float(input("\n\nEnter Height(m) : "))
-    
+while True:
+    try:
+        h =float(input("\n\nEnter Height(m) : "))
+        break
+    except:
+        print("\nPlease enter Numeric Value only!!")
         
-except:
-    print("Please enter Numeric Value only!!")
-
-try:
-    w = float(input("\n\nEnter Weigth(kg) : "))
-    
-except:
-    print("Please enter Numeric Value only!!")
+while True:
+    try:
+        w = float(input("\n\nEnter Weigth(kg) : "))
+        break
+    except:
+        print("\nPlease enter Numeric Value only!!")
 
 
 if(h != 0 and h<2.5 and w > 0):
     bmi = float(w/h**2)
-    print(f"BMI = {bmi:.2f}")
-
+    print("\n----------------------------------")
+    print(f"\nBMI = {bmi:.2f}\n")
+    
     if(bmi < 18.5):
-     print("Underweight")
+     print("\nUnderweight")
     elif(18.5 <= bmi < 25):
-     print("Normal Weight")
+     print("\nNormal Weight")
     elif(25<= bmi <30):
-     print("Overweight")
+     print("\nOverweight")
     else:
-     print("Obese")
+     print("\nObese")
+    print("----------------------------------")
+
 
 else:
     if(h == 0 or h>2.5):
