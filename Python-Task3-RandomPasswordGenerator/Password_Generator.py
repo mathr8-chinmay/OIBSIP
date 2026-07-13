@@ -12,7 +12,7 @@ while True :
             if(length>7):
                 break
             elif(length <8):
-                print("\nPassword lenght must be grearater than 7\n")
+                print("\nPassword lenght must be greater than 7\n")
             else:
                 print("\n!!Please Enter Valid Length!!\n")
 
