@@ -30,7 +30,7 @@ while True:
                 continue
             except requests.exceptions.Timeout:
                 print("Connection Time out")
-                print("Plrase check your internet")
+                print("Please check your internet")
                 continue
 
             code = (response1.status_code)
